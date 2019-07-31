@@ -19,20 +19,20 @@
 
 //or this
 
-const { MongoClient, ObjectID} = require("mongodb")
+// const { MongoClient, ObjectID} = require("mongodb")
 
- const connectionURL = "mongodb://127.0.0.1:27017"
- const databaseName = "taskapp"
+//  const connectionURL = "mongodb://127.0.0.1:27017"
+//  const databaseName = "taskapp"
 
 //  const id = new ObjectID()
 //  console.log(id.getTimestamp())
 
-MongoClient.connect(connectionURL, {useNewUrlParser: true}, (error, client) => {
-    if(error){
-        return console.log("Unable to connect")
-    }
+// MongoClient.connect(connectionURL, {useNewUrlParser: true}, (error, client) => {
+//     if(error){
+//         return console.log("Unable to connect")
+//     }
     
-    const db = client.db(databaseName)
+//     const db = client.db(databaseName)
 
     ///!!!CREATE!!!///
 
@@ -195,10 +195,12 @@ MongoClient.connect(connectionURL, {useNewUrlParser: true}, (error, client) => {
 //     console.log(error)
 // }) 
 
+//REST API -> Represntational State Transfer
+//Installing Postman https://www.getpostman.com/
+//get nodemon as dev dep and express as dependency
 
 
 
-
-})
+// })
 
 
